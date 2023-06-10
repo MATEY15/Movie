@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import auth from './auth'
+import movieStore from './modules/movieStore'
 
 export default createStore({
   state: {
@@ -11,6 +11,6 @@ export default createStore({
   actions: {
   },
   modules: {
-    auth
+    movieStore
   }
 })
