@@ -12,3 +12,11 @@
   --danger: #FF647C;
   --danger-hover: #FDAFBB;
 }
+
+.layout {
+  max-width: 1440px;
+  width: calc(100% - 40px);
+  min-width: calc(270px - 40px);
+  margin-left: auto;
+  margin-right: auto;
+}

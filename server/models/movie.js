@@ -15,12 +15,16 @@ const movieSchema = new Schema({
         type: Number,
         require: true
     },
+    cast: [String],
     genres: [String],
     rating: Number,
     duration: {
         hours: Number,
         minutes:  Number
     },
+    poster: String,
+    trailer: String,
+    description: String,
     reviews: [
         {
             name: String,

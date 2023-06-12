@@ -1,12 +1,19 @@
 <template>
-    <div class="about">
-        <h1>This is about page</h1>
-        <div class="movie">
-            <div
-                v-for="item in allMovies "
-                class="movie__item"
-            >
-                {{ item.title }}
+    <div class="layout">
+        <div class="about">
+            <h1>This is about page</h1>
+            <div class="movie">
+                <div
+                    v-for="item in allMovies"
+                    class="movie__item"
+                >
+                    <h1>{{ item.title }}</h1>
+                    <ul>
+                        <li
+                            v-for="cast in item.cast"
+                        >{{cast}}</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -36,7 +43,7 @@ $this: '.movie';
 
 #{$this} {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,4fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 4fr));
     grid-gap: 20px 20px;
 
     //columns: 4 auto;
