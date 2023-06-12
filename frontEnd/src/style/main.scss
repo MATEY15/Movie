@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
 :root {
   --primary: #6979f8;
   --primary-hover: #A5AFFB;
@@ -11,6 +21,15 @@
   --warning-hover: #FFC7A6;
   --danger: #FF647C;
   --danger-hover: #FDAFBB;
+}
+
+body {
+  height: 100%;
+  background: #cad9f3; /* Old browsers */
+  background: -moz-linear-gradient(top,  #EAF2FF 0%, #cad9f3 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #EAF2FF 0%,#cad9f3 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #EAF2FF 0%,#cad9f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cad9f3', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
 }
 
 .layout {

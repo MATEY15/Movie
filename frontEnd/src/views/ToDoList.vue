@@ -56,9 +56,9 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 body {
-  background: #A5AEEB;
+  background: #A5AEEB !important;
 }
 
 input {
